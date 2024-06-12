@@ -1,16 +1,12 @@
-import { useEffect, useState } from "react";
+import React from 'react';
+import MovieCard from '../components/MovieCard';
 
-function Home() {
-  return (
-    <>
-      <header>
-        {/* What component should go here? */}
-      </header>
-      <main>
-        {/* Info goes here! */}
-      </main>
-    </>
-  );
-};
+const Home = () => (
+  <div>
+    <h1>Home Page</h1>
+    <MovieCard title="Movie Title" id="1" />
+    {/* Render more MovieCard components here */}
+  </div>
+);
 
 export default Home;
